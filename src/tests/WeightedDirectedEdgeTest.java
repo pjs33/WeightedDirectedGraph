@@ -7,7 +7,7 @@ import classes.WeightedDirectedEdge;
 public class WeightedDirectedEdgeTest {
 	
 	@Test
-	private void testConstructor() {
+	public void testConstructor() {
 		
 		// Initialize WeightedDirectedEdge
 		String fromVertex = "A";
@@ -22,7 +22,7 @@ public class WeightedDirectedEdgeTest {
 	}
 	
 	@Test(expected = IllegalArgumentException.class)
-	private void testConstructorIllegalFromVertexArgument() {
+	public void testConstructorIllegalFromVertexArgument() {
 		
 		// Initialize WeightedDirectedEdge
 		String fromVertex = "";
@@ -34,7 +34,7 @@ public class WeightedDirectedEdgeTest {
 	}
 	
 	@Test(expected = IllegalArgumentException.class)
-	private void testConstructorIllegalToVertexArgument() {
+	public void testConstructorIllegalToVertexArgument() {
 		
 		// Initialize WeightedDirectedEdge
 		String fromVertex = "A";
@@ -46,7 +46,7 @@ public class WeightedDirectedEdgeTest {
 	}
 	
 	@Test(expected = IllegalArgumentException.class)
-	private void testConstructorIllegalVertexArguments() {
+	public void testConstructorIllegalVertexArguments() {
 		
 		// Initialize WeightedDirectedEdge
 		String fromVertex = "";
@@ -58,7 +58,7 @@ public class WeightedDirectedEdgeTest {
 	}
 	
 	@Test
-	private void testFromVertexGetSet() {
+	public void testFromVertexGetSet() {
 		
 		// Initialize WeightedDirectedEdge
 		String fromVertex = "A";
@@ -80,7 +80,7 @@ public class WeightedDirectedEdgeTest {
 	}
 	
 	@Test(expected = IllegalArgumentException.class)
-	private void testFromVertexSetIllegalArgument() {
+	public void testFromVertexSetIllegalArgument() {
 		
 		// Initialize WeightedDirectedEdge
 		String fromVertex = "A";
@@ -93,7 +93,7 @@ public class WeightedDirectedEdgeTest {
 	}
 	
 	@Test
-	private void testToVertexGetSet() {
+	public void testToVertexGetSet() {
 		
 		// Initialize WeightedDirectedEdge
 		String fromVertex = "A";
@@ -115,7 +115,7 @@ public class WeightedDirectedEdgeTest {
 	}
 	
 	@Test(expected = IllegalArgumentException.class)
-	private void testToVertexSetIllegalArgument() {
+	public void testToVertexSetIllegalArgument() {
 		
 		// Initialize WeightedDirectedEdge
 		String fromVertex = "A";
@@ -128,7 +128,7 @@ public class WeightedDirectedEdgeTest {
 	}
 	
 	@Test
-	private void testWeightGetSet() {
+	public void testWeightGetSet() {
 		
 		// Initialize WeightedDirectedEdge
 		String fromVertex = "A";
